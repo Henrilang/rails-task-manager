@@ -1,0 +1,9 @@
+<h1>Editing <%= @task.title %></h1>
+<%= form_for(@task) do |f| %>
+  <%= f.text_field :title%>
+  <%= f.text_field :details%>
+  <%= f.text_field :completed%>
+  <%= f.submit 'Update' %>
+<% end %>
+
+<%= link_to 'back to tasks', tasks_path  %>
